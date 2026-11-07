@@ -74,12 +74,23 @@ export default function HeroSection() {
             <div className="mt-10 pt-6 border-t border-[#26130B]/10 dark:border-white/10 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-[#635348] dark:text-[#C7B9AD]">
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
-                  {["/images/avatars/avatar-1.jpg", "/images/avatars/avatar-2.jpg", "/images/avatars/avatar-3.jpg"].map((src, i) => (
+                  {[
+                    "/images/avatars/avatar-1.jpg",
+                    "/images/avatars/avatar-2.jpg",
+                    "/images/avatars/avatar-3.jpg",
+                  ].map((src, i) => (
                     <div
                       key={i}
-                      className="relative w-7 h-7 rounded-full overflow-hidden border-2 border-white dark:border-[#0E0906]"
+                      className="relative w-7 h-7 rounded-full overflow-hidden border-2 border-white dark:border-[#0E0906] shrink-0"
+                      style={{ width: 28, height: 28 }}
                     >
-                      <Image src={src} alt="Diner" fill className="object-cover" />
+                      <Image
+                        src={src}
+                        alt="Diner"
+                        width={28}
+                        height={28}
+                        className="w-full h-full object-cover rounded-full"
+                      />
                     </div>
                   ))}
                 </div>

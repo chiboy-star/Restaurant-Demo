@@ -172,12 +172,16 @@ export default function CommandMenu() {
                       className="flex items-center justify-between p-2.5 rounded-xl hover:bg-[#FAF7F2] dark:hover:bg-[#241A14] transition-colors group"
                     >
                       <div className="flex items-center gap-3">
-                        <div className="relative w-11 h-11 rounded-lg overflow-hidden shrink-0 bg-neutral-100">
+                        <div
+                          className="relative w-11 h-11 rounded-lg overflow-hidden shrink-0 bg-neutral-100"
+                          style={{ width: 44, height: 44 }}
+                        >
                           <Image
                             src={dish.image}
                             alt={dish.name}
-                            fill
-                            className="object-cover"
+                            width={44}
+                            height={44}
+                            className="w-full h-full object-cover rounded-lg"
                           />
                         </div>
                         <div>

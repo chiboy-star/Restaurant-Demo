@@ -177,12 +177,16 @@ export default function CartDrawer() {
                     key={ci.item.id}
                     className="flex items-center gap-3 p-3 rounded-2xl bg-[#FAF7F2] dark:bg-[#241A14] border border-[#26130B]/10 dark:border-white/10"
                   >
-                    <div className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-neutral-100">
+                    <div
+                      className="relative w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-neutral-100"
+                      style={{ width: 64, height: 64 }}
+                    >
                       <Image
                         src={ci.item.image}
                         alt={ci.item.name}
-                        fill
-                        className="object-cover"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover rounded-xl"
                       />
                     </div>
 

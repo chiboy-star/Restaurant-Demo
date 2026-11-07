@@ -100,12 +100,16 @@ export default function ReviewsSection() {
                       : "opacity-60 hover:opacity-100"
                   }`}
                 >
-                  <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-white dark:border-[#0E0906]">
+                  <div
+                    className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-white dark:border-[#0E0906] shrink-0"
+                    style={{ width: 44, height: 44 }}
+                  >
                     <Image
                       src={review.avatar}
                       alt={review.name}
-                      fill
-                      className="object-cover"
+                      width={44}
+                      height={44}
+                      className="w-full h-full object-cover rounded-full"
                     />
                   </div>
                 </button>

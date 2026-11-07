@@ -99,7 +99,10 @@ export default function PopularDishesSection() {
               >
                 <div>
                   {/* Photo Container */}
-                  <div className="relative w-full h-52 sm:h-56 rounded-xl overflow-hidden bg-neutral-100 mb-4 shadow-xs">
+                  <div
+                    className="relative w-full h-52 sm:h-56 rounded-xl overflow-hidden bg-neutral-100 mb-4 shadow-xs"
+                    style={{ minHeight: 208 }}
+                  >
                     <Image
                       src={dish.image}
                       alt={dish.name}

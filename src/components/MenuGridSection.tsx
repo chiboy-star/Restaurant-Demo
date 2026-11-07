@@ -227,7 +227,10 @@ export default function MenuGridSection() {
                 >
                   <div>
                     {/* Image Container with Shimmer Blur Placeholder */}
-                    <div className="relative w-full h-48 rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 mb-4 shadow-xs">
+                    <div
+                      className="relative w-full h-48 rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 mb-4 shadow-xs"
+                      style={{ minHeight: 192 }}
+                    >
                       <Image
                         src={item.image}
                         alt={item.name}
